@@ -1,0 +1,23 @@
+
+REFer: https://mariadb.com/kb/en/installing-mariadb-deb-files/#installing-mariadb-packages-with-apt
+
+>$ sudo apt-get install mariadb-server galera-4 mariadb-client libmariadb3 mariadb-backup mariadb-common
+
+
+>$ ALTER USER 'root'@'localhost' IDENTIFIED BY 'root';
+
+>$ sudo systemctl start mariadb
+
+//Setup done with following config
+username root
+password root
+
+// check Shell 
+>$ mariadb -u root -p
+
+// Check mariadb status
+>$ systemctl status mariadb
+
+
+INSERT INTO admins SET first_name = 'John', last_name = 'Doe', email = 'prncboghara@gmail.com', password = 'Test@123';
+INSERT INTO admins SET first_name = 'John', last_name = 'Doe', email = 'prncboghara@gmail.com', password = '8f8754103e0a454a10c7ccb96508e9a1e3c3f021388cbe3718b60110b3b90204d65838a48e1eb4415160bf5acc67771463b27aa7f929b59d5edb261b7c57c6c8';
